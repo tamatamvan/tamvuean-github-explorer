@@ -1,5 +1,6 @@
 var Vue = require('vue');
 Vue.config.debug = true;
+Vue.use(require('vue-resource'));
 
 new Vue({
   el: '#container',
