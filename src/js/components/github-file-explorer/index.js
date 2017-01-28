@@ -24,6 +24,13 @@ module.exports = {
         this.files = data;
       })
     }
+  },
+  computed: {
+    fullRepoUrl: function() {
+      return this.username + '/' + this.repo;
+    }
+  },
+  created: function() {
+    if (this.username && this.repo) this.getFiles();
   }
-  created: if (this.username && this.repo) this.getFiles();
 }

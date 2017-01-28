@@ -22,11 +22,6 @@ new Vue({
       console.groupEnd("Vue Data");
     }
   },
-  computed: {
-    fullRepoUrl: function() {
-      return this.username + '/' + this.repo;
-    }
-  },
   //components lists
   components: {
       githubFileExplorer: require('./components/github-file-explorer') //main entry for this app's components
