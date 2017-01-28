@@ -20,5 +20,10 @@ new Vue({
       console.log("Repo: ", this.repo);
       console.groupEnd("Vue Data");
     }
+  },
+
+  //components lists
+  components: {
+      githubFileExplorer: require('./components/github-file-explorer') //main entry for this app's components
   }
 })
